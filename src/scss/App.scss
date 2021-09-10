@@ -1,0 +1,173 @@
+@import 'reset.scss';
+@import 'variables.scss';
+@import '_mixin.scss';
+@import 'fonts.scss';
+@import '_partials';
+
+html {
+    scroll-behavior: smooth;
+  }
+// header
+.main-header{ 
+    
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(#232323, 0.7);
+    z-index: 11;
+    
+    
+    
+    .container{
+    font-family: $SSPB;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+        
+        h2{
+            font-size:16px;
+            color: white;
+            @media (max-width:$small){
+                font-size: 12px;
+            }
+        }
+        .main-navigation{
+                height:0px;
+                transition: 1s height;
+            &.active{
+                display: block;
+                width: 300vw;
+                height: auto;
+                text-align: right;
+                padding-top:30px;
+                li{
+                    padding-bottom: 20px;
+                }
+            }
+            @extend %flex-placeholder;
+            text-transform: uppercase;
+            li{
+                padding: 0 20px;
+                a{
+                    font-size:16px;
+                    color: white;
+                    @include transition;
+                    &:hover{
+                        color: #E64A19;
+                    }
+                }
+                @media (max-width:$large){
+                 padding: 0 10px;
+                }
+            }
+            
+            @media (max-width:768px){
+                display: none;
+            }
+        }
+        .burger-menu {
+            position: relative;
+            right: 0;
+            width: 20px;
+            height: 10px;
+            cursor: pointer;
+            display: none;
+
+            @media (max-width:768px) {
+            display: block;
+            }
+          }
+          .burger {
+            position: absolute;
+            background: white;
+            width: 100%;
+            height: 3px;
+            top: 50%;
+            right: 0px;
+            opacity: 1;
+          }
+          .burger::before {
+            position: absolute;
+            background: white;
+            width: 100%;
+            height: 3px;
+            top: 5px;
+            content: "";
+            display: block;
+          }
+          .burger::after {
+            position: absolute;
+            background: white;
+            width: 100%;
+            height: 3px;
+            bottom: 5px;
+            content: "";
+            display: block;
+          }
+          .burger::after, .burger::before, .burger {
+            transition: all .3s ease-in-out;
+            -webkit-transition: all .3s ease-in-out;
+          }
+          .burger-menu.menu-on .burger::after{
+             transform: rotate(-45deg);
+             -webkit-transform: rotate(-45deg);
+            bottom: 0px;
+          }
+          .burger-menu.menu-on .burger::before{
+             transform: rotate(45deg);
+             -webkit-transform: rotate(45deg);
+            top: 0px;
+          }
+          .burger-menu.menu-on .burger{
+           background: rgba(111,111,111,.0);
+           width: 22px;
+          }
+          /* useless css */
+          .burger-menu {
+        
+          }
+          h1 {
+            font-family: arial;
+            letter-spacing: 4px;
+            font-size: 16px;
+            text-transform: uppercase;
+            color: #666;
+            text-align: center;
+            margin: 60px 0px 60px 0px;
+          }
+          .big {
+            letter-spacing: 0px;
+            font-size: 51px;
+            display: block;
+            text-transform: uppercase;
+          }
+    }
+    @media (max-width:768px){
+        padding: 10px;
+    }
+}
+.burger{
+    display: none;
+
+    @media (max-width:768px){
+        display: block;
+    }
+}
+.carousel{
+  height: 100vh;
+}
+.relative{
+  position: relative;
+
+  .sliderTitle{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    text-shadow: 3px 1px 16px rgba(0, 0, 0, 1);
+    transform: translateY(-50%);
+    font-family: $BPG;
+    color: white;
+    font-size: 36px;
+
+  }
+}

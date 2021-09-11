@@ -1,4 +1,6 @@
 import React from "react"
+import Logo from "./../images/logo.svg"
+
 
 
 const Header = () => {
@@ -6,11 +8,13 @@ const Header = () => {
         <>
             <header className="main-header">
                 <div className="container">
-                    <h2>Hats.ge</h2>
+                    <div className="flex-logo">
+                        <img src={Logo} alt="Logo" className="logo" />
+                        <h2>Hats.ge</h2>
+                    </div>
                     <nav className="main-navigation">
-                        <li><a href="#header">home</a></li>
-                        <li><a href="#portofolio">Featured</a></li>
-                        <li><a href="#our-team">Categories</a></li>
+                        <li><a href="#featured">Featured</a></li>
+                        <li><a href="#categories">Categories</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </nav>

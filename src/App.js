@@ -1,17 +1,16 @@
 import React from 'react'
+import { BrowserRouter,Route } from "react-router-dom"
 import './scss/App.scss'
-import Header from './components/Header'
-import {Featured,Categories,About} from './components/Main'
+import Home from './pages/Home' 
+import Hats from './pages/Hats'
 
 
 function App() {
   return (
-    <>
-         <Header />
-         <Featured />
-         <Categories />
-         <About />
-    </>
+        <BrowserRouter>
+          <Route path ="/" component={Home} exact />
+          <Route path ="/hats" component={Hats} exact />
+        </BrowserRouter>
   );
 }
 

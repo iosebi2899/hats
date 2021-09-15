@@ -6,7 +6,7 @@ import carouselImage2 from './../images/story2.jpg'
 import carouselImage3 from './../images/story3.jpg'
 
 const items = [
-    {id:1, route:"hats", name:"Hats", imgSrc:carouselImage1,instore:true},
+    {id:1, route:"items", name:"Hats", imgSrc:carouselImage1,instore:true},
     {id:2, name:"Comming Soon", imgSrc:carouselImage2,instore:false},
 ]
 

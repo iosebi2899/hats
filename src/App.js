@@ -8,8 +8,8 @@ import Hats from './pages/Hats'
 function App() {
   return (
         <BrowserRouter>
-          <Route path ="/" component={Home} exact />
-          <Route path ="/hats" component={Hats} exact />
+          <Route path ="/hats" component={Home} exact />
+          <Route path ="/items" component={Hats} exact />
         </BrowserRouter>
   );
 }

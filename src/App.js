@@ -8,7 +8,7 @@ import AddItem from './pages/AddItems'
 function App() {
   return (
         <BrowserRouter>
-          <Route path ="/hats" component={Home} exact />
+          <Route path ="/" component={Home} exact />
           <Route path ="/items" component={Hats} exact />
           <Route path ="/additems" component={AddItem} exact />
         </BrowserRouter>

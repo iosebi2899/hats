@@ -9,8 +9,8 @@ const ScrollToTop = (props) => {
     if(location.pathname === "/Hats"){
       window.scrollTo(0, 0);
     }
-    else if(location.pathname === "/#categories"){
-      window.scrollTo(1000, 1000);
+    else if(location.hash === "#categories"){
+      window.scrollTo(0, 550);
     }
   }, [location]);
 

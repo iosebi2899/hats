@@ -1,17 +1,19 @@
 import React from "react"
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Categorie from './Categorie'
 import { Carousel } from 'react-responsive-carousel';
 import carouselImage1 from './../images/story1.jpg'
 import carouselImage2 from './../images/story2.jpg'
 import carouselImage3 from './../images/story3.jpg'
 
-const items = [
-    {id:1, route:"items", name:"Hats", imgSrc:carouselImage1,instore:true},
+const categories = [
+    {id:1, route:"Hats", name:"Hats", imgSrc:carouselImage1,instore:true},
     {id:2, name:"Comming Soon", imgSrc:carouselImage2,instore:false},
 ]
 
 
 export const Featured = () => {
+
     return (
         <div id="featured" className="relative header">
             <Carousel 
@@ -45,13 +47,10 @@ export const Categories = () => {
     return (
         <div id="categories" className="relative categories">
             <div className="categories-left">
-                {items.map((e)=>{
+                {categories.map((e)=>{
                     if(e.instore){
                         return (
-                            <a className="items" href={e.route}>
-                                <img src={e.imgSrc} alt="Categories item" />
-                                <p>{e.name}</p>
-                            </a>
+                            <Categorie route={e.route} imgSrc={e.imgSrc} alt="Categories item" pName={e.name} />
                         )
                     }else{
                         return(

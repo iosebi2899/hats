@@ -1,15 +1,19 @@
 import React from "react"
-import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
-
-const routerIndicator = (params) => {
+import NavigateNextIcon from '@material-ui/icons/NavigateNext';
+import { useHistory,useParams } from "react-router";
+const RouterIndicator = (params) => {
     const list = params.list
+    const history =useHistory()
+    const user = useParams()
+    console.log(user)
+    const str = history.location.pathname.replace(/\//g, "")
     return (
         list.map((i)=>{
             return (
-                <p><a href={i.route}>{i.name}</a><ArrowBackIosIcon/></p>
+                <p className="indicator" ><span onClick={() => history.push(i.route)}>{i.name}</span><NavigateNextIcon/>{str}</p>
             )
         })
     )
 }
 
-export default routerIndicator
+export default RouterIndicator

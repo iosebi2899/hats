@@ -9,10 +9,10 @@ import ScrollToTop from './components/common/scrollToTop'
 function App() {
   return (
         <BrowserRouter>
-          <ScrollToTop>
           <Route path ="/" component={Home} exact />
+          <ScrollToTop>
           <Route path ="/Hats" component={Hats} exact />
-          <Route path ="/additems" component={AddItem} exact />
+          <Route path ="/Hats/:id" component={AddItem} exact />
           </ScrollToTop>
         </BrowserRouter>
   );

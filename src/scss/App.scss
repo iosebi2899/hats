@@ -281,6 +281,10 @@ html {
     cursor: pointer;
     padding: 25px;
     margin-bottom: 25px;
+    transition: 0.2s;
+    &:hover{
+      background-color: #e0b694
+    }
     img{
       width: 100%;
       border-radius: 14px;
@@ -297,16 +301,24 @@ html {
       color: white;
       font-family: $MED;
       justify-content: space-between;
+      transition: 0.2s;
+      
+
+      .lowerfontsize{
+        font-size: 14px;
+      }
     }
   }
 }
 .indicator{
   font-size: 36px;
   color:#997d66;
-  font-family: $MED;
+  font-family: $MON;
   padding: 5%; 
+  cursor: default;
 
   span{
     cursor: pointer;
+    font-family: $MED;
   }
 }

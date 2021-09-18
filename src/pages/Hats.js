@@ -5,7 +5,7 @@ import RouterIndicator from "../components/common/routerIndicator"
 const Hats = () => {
 
     const list=[
-        {route:"/",name:"Home"}
+        {route:"/#categories",name:"Categories"}
     ]
 
 
@@ -20,7 +20,7 @@ const Hats = () => {
                             <img src={item.imgSrc} alt="hat" />
                             <div className="item-article">
                                 <h4>{item.name}</h4>
-                                <p>{item.price}₾</p>
+                                <p>{item.price}<span className="lowerfontsize"> Gel</span></p>
                             </div>
                         </div>    
                     )

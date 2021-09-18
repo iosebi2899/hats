@@ -5,7 +5,7 @@ import { Carousel } from 'react-responsive-carousel';
 import carouselImage1 from './../images/story1.jpg'
 import carouselImage2 from './../images/story2.jpg'
 import carouselImage3 from './../images/story3.jpg'
-
+import { useLocation } from "react-router";
 const categories = [
     {id:1, route:"Hats", name:"Hats", imgSrc:carouselImage1,instore:true},
     {id:2, name:"Comming Soon", imgSrc:carouselImage2,instore:false},
@@ -44,6 +44,7 @@ export const Featured = () => {
 }
 
 export const Categories = () => {
+    
     return (
         <div id="categories" className="relative categories">
             <div className="categories-left">

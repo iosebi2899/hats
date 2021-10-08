@@ -5,7 +5,7 @@ import RouterIndicator from "../components/common/routerIndicator"
 const Hats = () => {
 
     const list=[
-        {route:"hats-deploy/#categories",name:"Categories"}
+        {route:"/#categories",name:"Categories"}
     ]
 
 

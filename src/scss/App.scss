@@ -54,6 +54,7 @@ html {
                 a{
                     font-size:16px;
                     color: white;
+                    font-family: 'BPG Nino Mtavruli';
                     @include transition;
                     &:hover{
                         color: #e2b396;
@@ -130,7 +131,7 @@ html {
         
           }
           h1 {
-            font-family: arial;
+            font-family: 'BPG Nino Mtavruli';
             letter-spacing: 4px;
             font-size: 16px;
             text-transform: uppercase;
@@ -175,6 +176,18 @@ html {
     transform: translateY(-50%);
     right:0 !important;
     border-radius: 25px 0 0 25px;
+    .slider-wrapper{
+      .slider{
+        .slide{
+          div{
+            img{
+              height: 80vh;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+    }
   }
 }
 .logo{
@@ -198,7 +211,12 @@ html {
     justify-content: space-between;
     flex-wrap: wrap;
     width: 50%;
-
+    
+    .inStore{
+      &:hover{
+        background-color: #eca972;
+      }
+    }
     .items{
       width: 44%;
       background-color: #e7cfbf;
@@ -216,6 +234,7 @@ html {
         font-family: $MED;
         text-decoration: none;
         color: #997d66;
+        font-family: 'BPG Nino Mtavruli';
         text-align: center;
         margin-top: 20px;
       }
@@ -230,7 +249,7 @@ html {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    font-family: $MON;
+    font-family: 'BPG Nino Mtavruli';
     color: #e7cfbf;
     font-size: 72px;
   }
@@ -248,7 +267,7 @@ html {
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      font-family: $MON;
+      font-family: 'BPG Nino Mtavruli';
       color: #997d66;
       font-size: 72px;
   }
@@ -272,7 +291,6 @@ html {
   padding: 5%;
   background-color: #997d66;
   border-radius: 25px 25px 0 0 ;
-
   .category-item{
     width: calc(24% - 10px);
     box-shadow: 0 2px 15px rgba(200,200,200,0.3);
@@ -283,12 +301,14 @@ html {
     margin-bottom: 25px;
     transition: 0.2s;
     &:hover{
-      background-color: #e0b694
+      .item-article{
+        background-color: #f5a96b;
+      }
     }
     img{
       width: 100%;
       border-radius: 14px;
-      height: 200px;
+      height: auto;
       object-fit: cover;
     }
     .item-article{
@@ -298,10 +318,12 @@ html {
       margin-top: -20px;
       border-radius: 0 0 14px 14px;
       padding-top: 40px;
+      font-size: 16px;
       color: white;
       font-family: $MED;
       justify-content: space-between;
-      transition: 0.2s;
+      @include transition;
+      
       
 
       .lowerfontsize{

@@ -2,13 +2,9 @@ import React from "react"
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Categorie from './Categorie'
 import { Carousel } from 'react-responsive-carousel';
-import carouselImage1 from './../images/story1.jpg'
-import carouselImage2 from './../images/story2.jpg'
-import carouselImage3 from './../images/story3.jpg'
-import { useLocation } from "react-router";
 const categories = [
-    {id:1, route:"Hats", name:"Hats", imgSrc:carouselImage1,instore:true},
-    {id:2, name:"Comming Soon", imgSrc:carouselImage2,instore:false},
+    {id:1, route:"Hats", name:"ქუდები", imgSrc:'https://i.imgur.com/PtWR44c.jpg',instore:true},
+    {id:2, name:"მალე სხვა კატეგორიებიც", instore:false },
 ]
 
 
@@ -29,16 +25,16 @@ export const Featured = () => {
             className="Carousel"
             >
                 <div>
-                    <img src={carouselImage1} alt="story1" />
+                    <img src='https://i.imgur.com/DSkhzLD.jpg' alt="story1" />
                 </div>
                 <div>
-                    <img src={carouselImage2} alt="story2"/>
+                    <img src='https://i.imgur.com/TzTQndC.jpg' alt="story2"/>
                 </div>
                 <div>
-                    <img src={carouselImage3} alt="story3"/>
+                    <img src='https://i.imgur.com/PtWR44c.jpg' alt="story3"/>
                 </div>
             </Carousel>
-            <h1 className="sliderTitle">Featured<br />Items</h1>
+            <h1 className="sliderTitle">Gallery</h1>
         </div>
     )
 }
@@ -56,7 +52,7 @@ export const Categories = () => {
                     }else{
                         return(
                             <div className="items">
-                                <img src={e.imgSrc} alt="Categories item" />
+                                <img src={e.imgSrc} alt="" />
                                 <p style={{cursor:"default"}}>{e.name}</p>
                             </div>
                         )
@@ -64,7 +60,7 @@ export const Categories = () => {
                 })}
             </div>
             
-            <div className="title">Categories</div>
+            <div className="title">კატეგორიები</div>
         </div>
     )
 }
@@ -72,7 +68,7 @@ export const Categories = () => {
 export const About = () =>{
     return(
         <div id="about" className="relative about">
-            <div className="title">About</div>
+            <div className="title">ჩვენს შესახებ</div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis malesuada lorem, eu maximus mi semper ut. Integer maximus sodales ligula ut sollicitudin. Suspendisse potenti. Cras egestas, dolor in rutrum luctus, elit nulla faucibus lacus, et hendrerit neque ligula eget ligula. Phasellus aliquam, risus ut porta sagittis, odio lorem tristique lorem, eget malesuada urna risus ut mi. Integer tristique est id nisl ultrices egestas. Nulla consectetur dolor sed pharetra tempus.</p>
         </div>
     )

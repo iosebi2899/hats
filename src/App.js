@@ -10,10 +10,10 @@ import Item from './pages/Item'
 function App() {
   return (
         <BrowserRouter>
-          <Route path ="/" component={Home} exact />
+          <Route path ="/hats-deploy" component={Home} exact />
           <ScrollToTop>
-          <Route path ="/Hats" component={Hats} exact />
-          <Route path ="/Hats/:id" component={Item} exact />
+          <Route path ="/hats-deploy/Hats" component={Hats} exact />
+          <Route path ="/hats-deploy/Hats/:id" component={Item} exact />
           </ScrollToTop>
         </BrowserRouter>
   );

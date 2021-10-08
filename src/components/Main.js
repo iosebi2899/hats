@@ -3,7 +3,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Categorie from './Categorie'
 import { Carousel } from 'react-responsive-carousel';
 const categories = [
-    {id:1, route:"Hats", name:"ქუდები", imgSrc:'https://i.imgur.com/PtWR44c.jpg',instore:true},
+    {id:1, route:"hats-deploy/Hats", name:"ქუდები", imgSrc:'https://i.imgur.com/PtWR44c.jpg',instore:true},
     {id:2, name:"მალე სხვა კატეგორიებიც", instore:false },
 ]
 

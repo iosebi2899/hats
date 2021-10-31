@@ -13,10 +13,10 @@ const Header = () => {
                         <h2>Hats.ge</h2>
                     </div>
                     <nav className="main-navigation">
-                        <li><a href="#featured">Gallery</a></li>
+                        <li><a href="#featured">მთავარი</a></li>
                         <li><a href="#categories">კატეგორიები</a></li>
-                        <li><a href="#about">ჩვენს შესახებ</a></li>
-                        <li><a href="#contact">კონტაქთი</a></li>
+                        <li><a href="#about">ჩვენ შესახებ</a></li>
+                        <li><a href="#contact">კონტაქტი</a></li>
                     </nav>
                     <div className="burger-menu">
                         <div className="burger"></div>  

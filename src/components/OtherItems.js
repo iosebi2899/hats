@@ -24,14 +24,15 @@ const OtherItems = (props) => {
       };
     const history = useHistory()
     return (
-        <div>
+        <div className="other-production">
+            <h3 className="indicator white">სხვა პროდუქცია</h3>
             <Carousel 
             responsive={responsive}
             className="Carousel-in-item"
             >
                 {props.resource.map((item)=>{
                     return (
-                        <div key={item.id} className="category-item full" onClick={()=>history.push('/Hats/'+item.id)}>
+                        <div key={item.id} className={history.location.pathname === `/Hats/${item.id}` ? "selected category-item full" : "category-item full"} onClick={()=>history.push('/Hats/'+item.id)}>
                             <img src={item.imgSrc} alt="hat" />
                             <div key="2" className="item-article">
                                 <h4>{item.name}</h4>

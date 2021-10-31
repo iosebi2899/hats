@@ -12,7 +12,7 @@ function App() {
           <Route path ="/" component={Home} exact />
           <ScrollToTop>
           <Route path ="/Hats" component={Hats} exact />
-          <Route path ="/Hats/:id" component={Item} exact />
+          <Route path ="/Hats/:id" component={Item} />
           </ScrollToTop>
         </BrowserRouter>
   );

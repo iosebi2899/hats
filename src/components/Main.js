@@ -25,7 +25,7 @@ export const Featured = () => {
             className="Carousel"
             >
                 <div>
-                    <img src='https://i.imgur.com/DSkhzLD.jpg' alt="story1" />
+                    <img src='https://i.imgur.com/fKh2hWL.jpg' alt="story1" />
                 </div>
                 <div>
                     <img src='https://i.imgur.com/TzTQndC.jpg' alt="story2"/>
@@ -68,7 +68,7 @@ export const Categories = () => {
 export const About = () =>{
     return(
         <div id="about" className="relative about">
-            <div className="title">ჩვენს შესახებ</div>
+            <div className="title">ჩვენ შესახებ</div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis malesuada lorem, eu maximus mi semper ut. Integer maximus sodales ligula ut sollicitudin. Suspendisse potenti. Cras egestas, dolor in rutrum luctus, elit nulla faucibus lacus, et hendrerit neque ligula eget ligula. Phasellus aliquam, risus ut porta sagittis, odio lorem tristique lorem, eget malesuada urna risus ut mi. Integer tristique est id nisl ultrices egestas. Nulla consectetur dolor sed pharetra tempus.</p>
         </div>
     )

@@ -42,7 +42,8 @@ const Item = () => {
                 <div className="item-description">
                     <h1>{hatsList[id].name}</h1>
                     <h2>{hatsList[id].size}</h2>
-                    <div className='colorPicker'>
+                    {id != 0 && (
+                        <div className='colorPicker'>
                         {id === '1' && (
                         <>
                             <h2>ფერი:</h2>
@@ -86,6 +87,7 @@ const Item = () => {
                             
                         </>)}
                     </div>
+                    )}
                     <div className="instaIcon">
                         <h3>{hatsList[id].price}Gel</h3>
                         <a href="https://www.instagram.com/hats.ge/" target="_blank" rel="noreferrer"><img src={instaLogo} alt="logo" /></a>

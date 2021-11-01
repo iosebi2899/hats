@@ -14,7 +14,7 @@ const Hats = (props) => {
         if(scroll==="top"){
             window.scrollTo(0,0)
         }else if(scroll==="content"){
-            window.scrollTo(0,250)
+            window.scrollTo(0,0)
         }
     },[scroll])
 

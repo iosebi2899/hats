@@ -6,7 +6,7 @@ const ScrollToTop = (props) => {
   const location = useLocation();
   useEffect(() => {
     if(location.hash === "#categories"){
-      window.scrollTo(0, 300);
+      window.scrollTo(0, 100);
     }else if(location.hash === "Hats/"){}
   }, [location]);
 

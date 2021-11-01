@@ -194,6 +194,15 @@ html {
   0 22.3px 57.9px rgba(0, 0, 0, 0.072),
   0 41.8px 53.4px rgba(0, 0, 0, 0.086),
   0 100px 50px rgba(0, 0, 0, 0.12);
+
+  .full{
+    width: auto;
+    margin: 0px 20px;
+  
+    @media (max-width:650px) {
+      width: 70%;
+    }
+  }
 }
 .logo{
   height:35px;
@@ -441,7 +450,7 @@ button{
     width: 46%;
   }
   @media (max-width:650px) {
-    width: 70%;
+    width: 80%;
   }
 }
 .item-flex{
@@ -531,7 +540,8 @@ button{
         border-radius: 12px;
       }
       .colorPicker{
-        margin: 0;
+        margin-top: 10px;
+        height: 85px;
       }
       .instaIcon{
         height: 36px;

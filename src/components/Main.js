@@ -33,8 +33,7 @@ export const Categories = () => {
                     }else{
                         return(
                             <div className="items">
-                                <img src={e.imgSrc} alt="" />
-                                <p style={{cursor:"default"}}>{e.name}</p>
+                                <p style={{cursor:"default", margin:0}}>{e.name}</p>
                             </div>
                         )
                     }

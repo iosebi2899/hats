@@ -29,6 +29,7 @@ const OtherItems = (props) => {
             <Carousel 
             responsive={responsive}
             autoPlay={true}
+            infinite={true}
             className="Carousel-in-item"
             >
                 {props.resource.map((item)=>{

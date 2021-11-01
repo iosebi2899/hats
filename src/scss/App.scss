@@ -576,6 +576,12 @@ button{
     padding: 8%;
     font-size: 36px;
   }
+  @media (max-width:330px) {
+    font-size: 30px;
+    span{
+      font-size: 25px;
+    }
+  }
 }
 .active{
   opacity: 1;

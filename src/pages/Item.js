@@ -42,7 +42,7 @@ const Item = () => {
                 <div className="item-description">
                     <h1>{hatsList[id].name}</h1>
                     <h2>{hatsList[id].size}</h2>
-                    {id != 0 && (
+                    {id !== '0' && (
                         <div className='colorPicker'>
                         {id === '1' && (
                         <>

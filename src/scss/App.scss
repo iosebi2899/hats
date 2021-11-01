@@ -19,13 +19,14 @@ html {
     background-color: #997d669d;
     z-index: 11;
     border-radius: 0 0 10px 10px;
+    display: none;
     
     
     
     .container{
     font-family: $MON;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     letter-spacing: 1px;
         h2{
@@ -155,36 +156,24 @@ html {
 }
 .header{
   position: relative;
-  height: 100vh;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  width: auto;
+  justify-content: center;
+  left: 50%;
+  transform:translateX(-50%);
+  font-family: $MON;
+  color: #997d66;
+  font-size: 72px;
+  h1{
+    height: auto;
+  }
+  img{
+    width: 150px;
+    height: auto;
+  }
 
-  .sliderTitle{
-    position: absolute;
-    top: 50%;
-    left: 5%;
-    transform: translateY(-50%);
-    font-family: $MON;
-    color: #997d66;
-    font-size: 72px;
-  }
-  .carousel.carousel-slider{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right:0 !important;
-    border-radius: 25px 0 0 25px;
-    .slider-wrapper{
-      .slider{
-        .slide{
-          div{
-            img{
-              height: 80vh;
-              object-fit: cover;
-            }
-          }
-        }
-      }
-    }
-  }
 }
 .Carousel-in-item{
   width: 100%;
@@ -221,6 +210,12 @@ html {
   padding:5%;
   border-radius: 25px;
 
+  @media (max-width:1024px){
+    flex-direction: column-reverse;
+
+  }
+
+
   .categories-left{
     display: flex;
     justify-content: space-between;
@@ -236,13 +231,14 @@ html {
       width: 44%;
       background-color: #e7cfbf;
       padding: 35px;
-      border-radius: 25px;
+      border-radius: 35px;
       transform:scale(1.0);
       @include transition;
+      box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06);
 
       img{
         width: 100%;
-        border-radius: 15px;
+        border-radius: 35px;
       }
       p{
         font-size: 21px;
@@ -268,7 +264,7 @@ html {
     justify-content: flex-end;
     align-items: center;
     font-family: 'BPG Nino Mtavruli';
-    color: #e7cfbf;
+    color: white;
     font-size: 72px;
   }
 }
@@ -367,9 +363,11 @@ button{
 }
 .category-item{
   width: calc(24% - 10px);
-  box-shadow: 0 2px 15px rgba(200,200,200,0.3);
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06);
   background-color: #e7cfbf;
-  border-radius: 14px;
+  border-radius: 35px;
   cursor: pointer;
   padding: 25px;
   margin-bottom: 25px;
@@ -381,25 +379,31 @@ button{
   }
   img{
     width: 100%;
-    border-radius: 14px;
+    border-radius: 35px;
     height: auto;
     object-fit: cover;
   }
   .item-article{
     display: flex;
+    flex-direction: column;
     background-color: #dfb28d;
     padding: 10px;
-    margin-top: -20px;
-    border-radius: 0 0 14px 14px;
-    padding-top: 40px;
+    margin-top: -30px;
+    border-radius: 0 0 35px 35px;
+    padding: 20px;
+    padding-top: 50px;
     font-size: 16px;
     color: white;
     font-family: $MED;
     justify-content: space-between;
     @include transition;
+    height: 125px;
     
     
-
+    h4{
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
     .lowerfontsize{
       font-size: 14px;
     }
@@ -447,9 +451,6 @@ button{
     h3{
       font-family: $MON;
       font-size: 24px;
-      position: absolute;
-      bottom: 15%;
-      left: 15%;
       background-color: #e7cfbf;
       border-radius: 18px;
       padding: 5%;
@@ -457,15 +458,19 @@ button{
   }
 }
 .indicator{
-  font-size: 36px;
+  font-size: 42px;
   color:#997d66;
-  font-family: $MON;
-  padding: 5%; 
+  display: flex;
+  align-items: center;
+  font-family: $SSPB;
+  padding: 3% 5%; 
   cursor: default;
 
   span{
     cursor: pointer;
-    font-family: $MED;
+    font-family: $BPG;
+    margin-top: 12px;
+    font-size: 36px;
   }
 }
 .colorPicker{
@@ -474,4 +479,33 @@ button{
 .active{
   opacity: 1;
   border-width: 5px ;
+}
+.instaIcon{
+  display: flex;
+  width: 72%;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 10%;
+  height: 60px;
+  a{
+    img{
+      height: 100%;
+      width: 60px;
+    }
+  }
+}
+.ukan{
+  background: none;
+  display: flex;
+  align-items: center;
+  padding:2% 0 0 5%;
+  font-size: 36px;
+  font-family: $BPG;
+  color: #997d66;
+  text-decoration: none;
+  opacity: 1;
+
+  span{
+    margin-top: 10px;
+  }
 }

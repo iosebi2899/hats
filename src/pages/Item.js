@@ -3,14 +3,23 @@ import hatsList from "../items/hats/hatsList"
 import { useHistory, useParams } from "react-router"
 import ItemImgContainer from "../components/common/ItemContainer.js"
 import OtherItems from "../components/OtherItems"
-import ColorPicker from "./../components/common/colorPicker"
+import instaLogo from "../images/instaicon.png"
+import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
+import { makeStyles } from "@material-ui/core"
 
 const scrollToTop = () =>{
     window.scrollTo(0,0)
 }
 
+const useStyle = makeStyles({
+    button:{
+        fontSize: 50,
+    },
+})
+
 const Item = () => {
     const [color,setColor] = useState('default')
+    const classes = useStyle()
     const history = useHistory()
 
     const {id} = useParams()
@@ -23,7 +32,7 @@ const Item = () => {
     // const imageSrc = hatsList[id].itemImg
     return (
         <>
-            <button onClick={() => history.push('/Hats', { scroll:"content"})} value="უკან"/>
+            <button className="ukan" onClick={() => history.push('/Hats', { scroll:"content"})} value="უკან"><NavigateBeforeIcon className={classes.button}/><span>უკან</span></button>
             <div className="item-flex">
                 <ItemImgContainer 
                     src={color === "black" ? hatsList[id].blackImgSrc 
@@ -33,7 +42,6 @@ const Item = () => {
                 <div className="item-description">
                     <h1>{hatsList[id].name}</h1>
                     <h2>{hatsList[id].size}</h2>
-                    <h3>{hatsList[id].price}Gel</h3>
                     <div className='colorPicker'>
                         {id === '1' && (
                         <>
@@ -78,8 +86,11 @@ const Item = () => {
                             
                         </>)}
                     </div>
+                    <div className="instaIcon">
+                        <h3>{hatsList[id].price}Gel</h3>
+                        <a href="https://www.instagram.com/hats.ge/" target="_blank" rel="noreferrer"><img src={instaLogo} alt="logo" /></a>
+                    </div>
                 </div>
-                
             </div>
             <OtherItems autoplat={true} resource={hatsList} />
         </>

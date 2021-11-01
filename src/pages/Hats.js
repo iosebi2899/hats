@@ -19,7 +19,7 @@ const Hats = (props) => {
     },[scroll])
 
     const list=[
-        {route:"/#categories",name:"Categories"}
+        {route:"/#categories",name:"კატეგორიები"}
     ]
 
 

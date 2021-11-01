@@ -1,9 +1,11 @@
 import React from "react"
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Categorie from './Categorie'
-import { Carousel } from 'react-responsive-carousel';
+import Logo from "./../images/logo.svg"
+import premiumLeatherHat from './../items/hats/img/premium-leather-khaki.jpg'
+
 const categories = [
-    {id:1, route:"Hats", name:"ქუდები", imgSrc:'https://i.imgur.com/PtWR44c.jpg',instore:true},
+    {id:1, route:"Hats", name:"ქუდები", imgSrc:premiumLeatherHat,instore:true},
     {id:2, name:"მალე სხვა კატეგორიებიც", instore:false },
 ]
 
@@ -12,29 +14,8 @@ export const Featured = () => {
 
     return (
         <div id="featured" className="relative header">
-            <Carousel 
-            autoPlay={true} 
-            infiniteLoop={true} 
-            showArrows={false}
-            transitionTime={1500}
-            interval={4500}
-            showStatus={false}
-            showThumbs={false}
-            stopOnHover={false}
-            width={760}
-            className="Carousel"
-            >
-                <div>
-                    <img src='https://i.imgur.com/fKh2hWL.jpg' alt="story1" />
-                </div>
-                <div>
-                    <img src='https://i.imgur.com/TzTQndC.jpg' alt="story2"/>
-                </div>
-                <div>
-                    <img src='https://i.imgur.com/PtWR44c.jpg' alt="story3"/>
-                </div>
-            </Carousel>
-            <h1 className="sliderTitle">Gallery</h1>
+            <img src={Logo} alt="Logo" className="logo" />
+            <h1 className="sliderTitle">Hats.ge</h1>
         </div>
     )
 }

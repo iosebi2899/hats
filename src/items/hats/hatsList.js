@@ -1,36 +1,40 @@
+import premiumHatKhaki from './img/premium-leather-khaki.jpg'
+import furLeatherHatKhaki from './img/fur-leather-khaki.jpg'
+import furLeatherHatWhite from './img/fur-leather-white.jpg'
+import latexBlack from './img/latex-black.jpg'
+import leatherBlack from './img/leather-black.jpg'
+import latexRed from './img/latex-red.jpg'
+import standartWarmBlack from './img/standart-warm-hat-black.jpg'
+import standartWarmWhite from './img/standart-warm-hat-white.jpg'
+import standartWarmKhaki from './img/standart-warm-hat-khaki.jpg'
+
 const hatsList = [
     {
         id:0,name:"Premium Leather Hat",
-        imgSrc:'https://i.imgur.com/GCcBFQ1.jpg',
+        imgSrc:premiumHatKhaki,
         price:"45",
         size:'ზომა: 56-58 სმ (რეგულირებადი)'},
     {
         id:1,
         name:"Latex Hat",
-        imgSrc:'https://i.imgur.com/tiknHYD.jpg',
-        blackImgSrc:'https://i.imgur.com/ek3nx3S.jpg',
+        imgSrc:latexRed,
+        blackImgSrc:latexBlack,
         price:"40",
         size:'ზომა: 56-58 სმ (რეგულირებადი)'}, 
     {
         id:2,
         name:"Standart Warm Hat",
-        imgSrc:'https://i.imgur.com/I2WB20D.jpg',
-        blackImgSrc:'https://i.imgur.com/JvwyIMG.jpg',
-        WhiteImgSrc:'https://i.imgur.com/ysWjD8D.jpg',
+        imgSrc:standartWarmKhaki,
+        blackImgSrc:standartWarmBlack,
+        WhiteImgSrc:standartWarmWhite,
         price:"25",
         size:'ზომა: 56-58 სმ (რეგულირებადი)'},
     {
         id:3,
         name:"Fur Leather Hat",
-        imgSrc:'https://i.imgur.com/hd6vh4f.jpg',
-        WhiteImgSrc:'https://i.imgur.com/fKh2hWL.jpg',
+        imgSrc:furLeatherHatKhaki,
+        WhiteImgSrc:furLeatherHatWhite,
         price:"50",
-        size:'ზომა: 56-58 სმ (რეგულირებადი)'},
-    {
-        id:4,
-        name:"Leather Hat",
-        imgSrc:'https://i.imgur.com/D93uhua.jpg',
-        price:"25",
         size:'ზომა: 56-58 სმ (რეგულირებადი)'},
 ]
 

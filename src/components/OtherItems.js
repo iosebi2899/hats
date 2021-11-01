@@ -28,6 +28,7 @@ const OtherItems = (props) => {
             <h3 className="indicator white">სხვა პროდუქცია</h3>
             <Carousel 
             responsive={responsive}
+            autoPlay={true}
             className="Carousel-in-item"
             >
                 {props.resource.map((item)=>{

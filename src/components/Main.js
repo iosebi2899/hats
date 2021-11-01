@@ -41,7 +41,7 @@ export const Categories = () => {
                 })}
             </div>
             
-            <div className="title">კატეგორიები</div>
+            <div className="title">პროდუქცია</div>
         </div>
     )
 }

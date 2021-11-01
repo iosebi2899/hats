@@ -156,13 +156,12 @@ html {
 }
 .header{
   position: relative;
-  height: 50vh;
+  height:100%;
   display: flex;
   align-items: center;
   width: auto;
   justify-content: center;
-  left: 50%;
-  transform:translateX(-50%);
+  padding: 5% 0;
   font-family: $MON;
   color: #997d66;
   font-size: 72px;
@@ -210,10 +209,6 @@ html {
   padding:5%;
   border-radius: 25px;
 
-  @media (max-width:1024px){
-    flex-direction: column-reverse;
-
-  }
 
 
   .categories-left{
@@ -257,6 +252,13 @@ html {
         }
       }
     }
+    @media (max-width:1100px) {
+      justify-content: center;
+      .items{
+        width: 90%;
+        margin-bottom: 20px;
+      }
+    }
   }
   .title{
     width: 50%;
@@ -266,6 +268,22 @@ html {
     font-family: 'BPG Nino Mtavruli';
     color: white;
     font-size: 72px;
+  }
+
+  @media (max-width:1100px){
+    flex-direction: column-reverse;
+    align-items: center;
+
+    .categories-left{
+      width: 85%;
+      margin-top: 20px;
+    }
+    .title{
+      margin: 10px 0 20px 0;
+      font-size: 36px;
+      width: 100%;
+      justify-content: center;
+    }
   }
 }
 button{
@@ -339,7 +357,16 @@ button{
     color: #997d66;
     font-size: 21px;
   }
-
+  @media (max-width:1100px) {
+    flex-direction: column;
+    align-items: center;
+    .title{
+      font-size: 36px;
+      width: 100%;
+      justify-content: center;
+      margin: 20px 0
+    }
+  }
 }
 
 

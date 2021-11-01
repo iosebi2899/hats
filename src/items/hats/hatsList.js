@@ -26,12 +26,6 @@ const hatsList = [
         WhiteImgSrc:'https://i.imgur.com/fKh2hWL.jpg',
         price:"50",
         size:'ზომა: 56-58 სმ (რეგულირებადი)'},
-    {
-        id:4,
-        name:"Leather Hat",
-        imgSrc:'https://i.imgur.com/D93uhua.jpg',
-        price:"25",
-        size:'ზომა: 56-58 სმ (რეგულირებადი)'},
 ]
 
 export default hatsList

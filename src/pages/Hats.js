@@ -30,7 +30,7 @@ const Hats = (props) => {
             <div key="" className="category-content">
                 {hatsList.map((item)=>{
                     return (
-                        <div key={item.id} className="category-item" onClick={()=>history.push('/Hats/'+item.id)}>
+                        <div key={item.id} className="category-item noSelect" onClick={()=>history.push('/Hats/'+item.id)}>
                             <img src={item.imgSrc} alt="hat" />
                             <div key="2" className="item-article">
                                 <h4>{item.name}</h4>

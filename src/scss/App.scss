@@ -189,7 +189,7 @@ html {
 }
 .other-production{
   background-color: #dfb28d;
-  padding: 0 5% 5% 5%;
+  padding: 0 5% 5% 2%;
   border-radius: 25px 25px 0px 0;
   box-shadow: 
   0 2.8px 52.2px rgba(0, 0, 0, 0.034),
@@ -419,7 +419,7 @@ button{
   border-radius: 35px;
   cursor: pointer;
   padding: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 25px !important;
   transition: 0.2s;
   &:hover{
     .item-article{
@@ -654,4 +654,31 @@ button{
       }
     }
   }
+}
+
+.noSelect {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.noSelect:focus {
+  outline: none !important;
+}
+
+.react-multiple-carousel__arrow{
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.react-multiple-carousel__arrow:focus{
+  outline: none !important;
 }

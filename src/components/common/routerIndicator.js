@@ -8,7 +8,7 @@ const RouterIndicator = (params) => {
     return (
         list.map((i)=>{
             return (
-                <p className="indicator" ><span onClick={() => history.push(i.route)}>{i.name}</span><NavigateNextIcon/>{str}</p>
+                <p className="indicator noSelect" ><span onClick={() => history.push(i.route)}>{i.name}</span><NavigateNextIcon/>{str}</p>
             )
         })
     )

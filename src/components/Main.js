@@ -34,7 +34,7 @@ export const Categories = () => {
                         )
                     }else{
                         return(
-                            <div className="items">
+                            <div className="items noSelect">
                                 <p style={{cursor:"default", margin:0}}>{e.name}</p>
                             </div>
                         )
@@ -64,8 +64,8 @@ export const Contact = () => {
                 კონტაქტი
             </div>
             <div className="contact-right">
-                <a className="mainLogo" href="https://www.instagram.com/hats.ge/" target="_blank" rel="noreferrer"><img src={emailLogo} alt="logo" /><p>ceohats.ge@gmail.com</p></a>
-                <a className="mainLogo" href="https://www.instagram.com/hats.ge/" target="_blank" rel="noreferrer"><img src={instaLogo} alt="logo" /><p>Hats.ge on Instagram</p></a>
+                <div className="mainLogo noSelect"><img src={emailLogo} alt="logo" /><p>ceohats.ge@gmail.com</p></div>
+                <a className="mainLogo noSelect" href="https://www.instagram.com/hats.ge/" target="_blank" rel="noreferrer"><img src={instaLogo} alt="logo" /><p>Hats.ge on Instagram</p></a>
             </div>
         </div>
     )

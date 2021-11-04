@@ -3,6 +3,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Categorie from './Categorie'
 import Logo from "./../images/logo.svg"
 import instaLogo from "./../images/instaicon.png"
+import emailLogo from "./../images/emailicon.png"
 import premiumLeatherHat from './../items/hats/img/premium-leather-khaki.jpg'
 
 const categories = [
@@ -63,7 +64,7 @@ export const Contact = () => {
                 კონტაქტი
             </div>
             <div className="contact-right">
-                <a className="mainLogo" href="https://www.instagram.com/hats.ge/" target="_blank" rel="noreferrer"><img src={instaLogo} alt="logo" /><p>ceohats.ge@gmail.com</p></a>
+                <a className="mainLogo" href="https://www.instagram.com/hats.ge/" target="_blank" rel="noreferrer"><img src={emailLogo} alt="logo" /><p>ceohats.ge@gmail.com</p></a>
                 <a className="mainLogo" href="https://www.instagram.com/hats.ge/" target="_blank" rel="noreferrer"><img src={instaLogo} alt="logo" /><p>Hats.ge on Instagram</p></a>
             </div>
         </div>

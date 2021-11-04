@@ -64,7 +64,7 @@ export const Contact = () => {
                 კონტაქტი
             </div>
             <div className="contact-right">
-                <a className="mainLogo" href="https://www.instagram.com/hats.ge/" target="_blank" rel="noreferrer"><img src={emailLogo} alt="logo" /><p>ceohats.ge@gmail.com</p></a>
+                <div className="mainLogo"><img src={emailLogo} alt="logo" /><p>ceohats.ge@gmail.com</p></div>
                 <a className="mainLogo" href="https://www.instagram.com/hats.ge/" target="_blank" rel="noreferrer"><img src={instaLogo} alt="logo" /><p>Hats.ge on Instagram</p></a>
             </div>
         </div>

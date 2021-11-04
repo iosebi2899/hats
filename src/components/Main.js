@@ -2,6 +2,8 @@ import React from "react"
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Categorie from './Categorie'
 import Logo from "./../images/logo.svg"
+import instaLogo from "./../images/instaicon.png"
+import emailLogo from "./../images/emailicon.png"
 import premiumLeatherHat from './../items/hats/img/premium-leather-khaki.jpg'
 
 const categories = [
@@ -49,8 +51,22 @@ export const About = () =>{
     return(
         <div id="about" className="relative about">
             <div className="title">ჩვენ შესახებ</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis malesuada lorem, eu maximus mi semper ut. Integer maximus sodales ligula ut sollicitudin. Suspendisse potenti. Cras egestas, dolor in rutrum luctus, elit nulla faucibus lacus, et hendrerit neque ligula eget ligula. Phasellus aliquam, risus ut porta sagittis, odio lorem tristique lorem, eget malesuada urna risus ut mi. Integer tristique est id nisl ultrices egestas. Nulla consectetur dolor sed pharetra tempus.</p>
+            <p><span className="med">Hats.ge</span> არის ონლაინ სივრცე, სადაც შეძლებთ ქუდების დათვალიერებასა და შეძენას. ჩვენი ნიშა არის ის, რომ გვაქვს ქუდები, როგორსაც სხვაგან ვერ იპოვით. ყველაზე ტრენდული და ახალი მოდელები. საქმიანობა ჯერ მხოლოდ სექტემბრიდან დავიწყეთ, თუმცა ელვის სისწრაფით ვვითარდებით. გვსურს მაქსიმალურად გაგიმარტივოთ ქუდის შერჩევის და ყიდვის პროცესი. მომხმარებელის ინტერესის მაქსიმალურად გათვალისწინებამ მოგვცა ის შედეგი, რაც დღეს გვაქვს.</p>
         </div>
     )
 }
 
+export const Contact = () => {
+    
+    return (
+        <div id="categories" className="relative contact">
+            <div className="contact-left">
+                კონტაქტი
+            </div>
+            <div className="contact-right">
+                <a className="mainLogo" href="https://www.instagram.com/hats.ge/" target="_blank" rel="noreferrer"><img src={emailLogo} alt="logo" /><p>ceohats.ge@gmail.com</p></a>
+                <a className="mainLogo" href="https://www.instagram.com/hats.ge/" target="_blank" rel="noreferrer"><img src={instaLogo} alt="logo" /><p>Hats.ge on Instagram</p></a>
+            </div>
+        </div>
+    )
+}

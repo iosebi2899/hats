@@ -1,5 +1,5 @@
 import React from 'react'
-import {Featured,Categories,About} from './../components/Main'
+import {Featured,Categories,About, Contact} from './../components/Main'
 import Header from './../components/Header'
 
 const Home = ()=>{
@@ -10,6 +10,7 @@ const Home = ()=>{
             <Featured />
             <Categories />
             <About />
+            <Contact />
         </>
     )
 }

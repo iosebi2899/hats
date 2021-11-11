@@ -13,7 +13,7 @@ const hatsList = [
         size:'ზომა: 56-58 სმ (რეგულირებადი)'}, 
     {
         id:2,
-        name:"Standart Warm Hat",
+        name:"Standard Warm Hat",
         imgSrc:'https://i.imgur.com/I2WB20D.jpg',
         blackImgSrc:'https://i.imgur.com/JvwyIMG.jpg',
         WhiteImgSrc:'https://i.imgur.com/ysWjD8D.jpg',

@@ -25,7 +25,7 @@ const hatsList = [
         imgSrc:'https://i.imgur.com/hd6vh4f.jpg',
         WhiteImgSrc:'https://i.imgur.com/fKh2hWL.jpg',
         price:"50",
-        size:'ზომა: 56-58 სმ (რეგულირებადი)'},
+        size:'ზომა: 56-58 სმ'},
 ]
 
 export default hatsList

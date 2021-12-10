@@ -12,29 +12,19 @@ const categories = [
     {id:2, name:"მალე სხვა კატეგორიებიც", instore:false },
 ]
 
-const getProducts = async() =>{
-    try {
-        const response = await axios.get('https://hats-ge-backend.herokuapp.com/products', {
-            headers:{
-                'Access-Control-Allow-Origin':'*'
-            }
-        })
-        console.log(response)
-    } catch (error) {
-        console.error(error)
-    }
-}
+// const getProducts = async() =>{
+//     try {
+//         const response = await axios.get('https://hats-ge-backend.herokuapp.com/products', {
+//             headers:{
+//                 'Access-Control-Allow-Origin':'*'
+//             }
+//         })
+//         console.log(response)
+//     } catch (error) {
+//         console.error(error)
+//     }
+// }
 
-
-export const Featured = () => {
-
-    return (
-        <div id="featured" className="relative header">
-            <img src={Logo} alt="Logo" className="logo" />
-            <h1 className="sliderTitle">Hats.ge</h1>
-        </div>
-    )
-}
 
 export const Categories = () => {
     
@@ -68,11 +58,15 @@ export const About = () =>{
     return(
         <div id="about" className="relative about">
             <div className="title">ჩვენ შესახებ</div>
-            <p><span className="med">Hats.ge</span> არის ონლაინ სივრცე, სადაც შეძლებთ ქუდების დათვალიერებასა და შეძენას. ჩვენი ნიშა არის ის, რომ გვაქვს ქუდები, როგორსაც სხვაგან ვერ იპოვით. ყველაზე ტრენდული და ახალი მოდელები. საქმიანობა ჯერ მხოლოდ სექტემბრიდან დავიწყეთ, თუმცა ელვის სისწრაფით ვვითარდებით. გვსურს მაქსიმალურად გაგიმარტივოთ ქუდის შერჩევის და ყიდვის პროცესი. მომხმარებელის ინტერესის მაქსიმალურად გათვალისწინებამ მოგვცა ის შედეგი, რაც დღეს გვაქვს.</p>
+            <p><span className="med">Hats.ge</span> არის ონლაინ სივრცე, სადაც შეძლებთ ქუდების დათვალიერებასა და შეძენას.  ყველაზე ტრენდული და ახალი მოდელები. საქმიანობა ჯერ მხოლოდ სექტემბრიდან დავიწყეთ, თუმცა ელვის სისწრაფით ვვითარდებით. გვსურს მაქსიმალურად გაგიმარტივოთ ქუდის შერჩევის. მომხმარებელის ინტერესის მაქსიმალურად გათვალისწინებამ მოგვცა ის შედეგი, რაც დღეს გვაქვს.</p>
         </div>
     )
 }
-
+export const FooterImg = () =>{
+    return(
+        <div className="footerImg"></div>
+    )
+}
 export const Contact = () => {
     
     return (

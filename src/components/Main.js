@@ -64,7 +64,9 @@ export const About = () =>{
 }
 export const FooterImg = () =>{
     return(
-        <div className="footerImg"></div>
+        <div className="footerImg">
+            <img src="https://i.imgur.com/ka6NpFj.png" alt="bottom"></img>
+        </div>
     )
 }
 export const Contact = () => {

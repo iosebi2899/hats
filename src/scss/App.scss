@@ -12,10 +12,16 @@ html {
   }
 // header
 .main-header{ 
-    background-position: center;
-    background-size: cover;
-    height: 90vh;
-    background-image: url("../images/Green-Yellow-Red-Folksy-Illustrative-Christmas-Greetings-Facebook-Cover.jpg");
+    img{
+      width: 100%;
+      height: 90vh;
+      object-fit: cover;
+    }
+    @media (max-width: 1366px) {
+      img{
+        height: auto;
+      }
+    }
     // padding: 10px 0;
     // position: fixed;
     // width: 100%;
@@ -188,6 +194,7 @@ html {
 }
 .white{
   color: white !important;
+  text-shadow: none !important;
   font-family: $BPG !important;
 }
 .other-production{
@@ -408,7 +415,7 @@ button{
   flex-wrap: wrap;
   padding: 5%;
   background-color: #dfb28d;
-  border-radius: 25px 25px 0 0 ;
+  border-radius: 35px ;
 }
 .full{
   width: auto !important;
@@ -579,11 +586,12 @@ button{
 }
 .indicator{
   font-size: 42px;
-  color:#997d66;
   display: flex;
   align-items: center;
   font-family: $SSPB;
   padding: 5%; 
+  text-shadow:0 0 3px #FFE205, 0 0 7px #FFE205, 0 0 20px #EDD205;
+  color:#fff6af;
   cursor: default;
 
   span{
@@ -616,7 +624,8 @@ button{
   padding:4% 0 0 5%;
   font-size: 36px;
   font-family: $BPG;
-  color: #997d66;
+  text-shadow:0 0 3px #FFE205, 0 0 7px #FFE205, 0 0 20px #EDD205;
+  color:#fff6af;
   text-decoration: none;
   opacity: 1;
 
@@ -641,6 +650,7 @@ button{
   margin-top: -30px;
   padding: 5% 25%;
   border-radius: 0 0 35px 35px;
+  padding-top: 70px;
   font-size: 36px;
   .contact-right{
     display: flex;
@@ -694,12 +704,8 @@ button{
 }
 
 .footerImg{
-  position: relative;
-  background-image: url("../images/bottom.png");
-  width: 100%;
-  background-size: cover;
-  margin-top: -140px;
-  height: 30rem;
-  overflow:visible;
-  background-position: bottom;
+  img{
+    width: 100%;
+    margin-top: -550px;
+  }
 }

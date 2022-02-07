@@ -709,3 +709,51 @@ button{
     margin-top: -550px;
   }
 }
+
+.addItem{
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color:#f8e8dd;
+  border-radius: 18px;
+  padding:3%;
+}
+
+.form-modal{
+  display: flex;
+}
+
+.adminka {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.plus {
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+  padding: 25px;
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.addItem-form{
+  display: flex;
+  flex-direction: column;
+}
+
+.addItem-form input{
+    border-radius: 14px;
+    padding: 10px;
+    border-color: transparent;
+    margin-top: 5px;    
+}

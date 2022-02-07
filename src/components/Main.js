@@ -1,10 +1,8 @@
-import React from "react"
+import React , {useState} from "react"
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Categorie from './Categorie'
-import Logo from "./../images/logo.svg"
 import instaLogo from "./../images/instaicon.png"
 import emailLogo from "./../images/emailicon.png"
-import axios from "axios";
 import premiumLeatherHat from './../items/hats/img/premium-leather-khaki.jpg'
 
 const categories = [
@@ -12,35 +10,20 @@ const categories = [
     {id:2, name:"მალე სხვა კატეგორიებიც", instore:false },
 ]
 
-// const getProducts = async() =>{
-//     try {
-//         const response = await axios.get('https://hats-ge-backend.herokuapp.com/products', {
-//             headers:{
-//                 'Access-Control-Allow-Origin':'*'
-//             }
-//         })
-//         console.log(response)
-//     } catch (error) {
-//         console.error(error)
-//     }
-// }
-
-
 export const Categories = () => {
     
     return (
         <>
-            {/* <button onClick={()=>getProducts()}>ClickMe</button> */}
             <div id="categories" className="relative categories">
                 <div className="categories-left">
-                    {categories.map((e)=>{
+                    {categories.map((e, index)=>{
                         if(e.instore){
                             return (
-                                <Categorie route={e.route} imgSrc={e.imgSrc} alt="Categories item" pName={e.name} />
+                                <Categorie key={index} route={e.route} imgSrc={e.imgSrc} alt="Categories item" pName={e.name} />
                             )
                         }else{
                             return(
-                                <div className="items noSelect">
+                                <div key ={index} className="items noSelect">
                                     <p style={{cursor:"default", margin:0}}>{e.name}</p>
                                 </div>
                             )

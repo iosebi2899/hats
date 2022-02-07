@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Hats from './pages/Hats'
 import ScrollToTop from './components/common/scrollToTop'
 import Item from './pages/Item'
+import AddItems from './pages/AddItems'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <ScrollToTop>
           <Route path ="/Hats" component={Hats} exact />
           <Route path ="/Hats/:id" component={Item} />
+          <Route path ="/txisyvelirozmarinit1." component={AddItems}/>
           </ScrollToTop>
         </BrowserRouter>
   );
